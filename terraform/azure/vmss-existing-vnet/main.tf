@@ -230,6 +230,7 @@ resource "azurerm_image" "custom-image" {
     os_type  = "Linux"
     os_state = "Generalized"
     blob_uri = var.source_image_vhd_uri
+    storage_type = "Standard_LRS"
   }
 }
 
