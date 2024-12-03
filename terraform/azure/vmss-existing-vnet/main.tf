@@ -304,7 +304,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "vmss" {
       for_each = local.SSH_authentication_type_condition ? [
         1] : []
       content {
-        public_key = file("terraform/azure/vmss-existing-vnet/azure_public_key")
+        public_key = file(".terraform/azure/vmss-existing-vnet/azure_public_key")
         username = "notused"
       }
     }
