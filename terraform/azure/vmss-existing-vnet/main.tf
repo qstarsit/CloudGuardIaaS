@@ -60,7 +60,7 @@ module "network-security-group" {
         source_port_ranges = "*"
         destination_port_ranges = "*"
         description = "Allow all inbound connections"
-        source_address_prefix = "64.238.204.246/32","85.146.137.72/32"
+        source_address_prefix = ["64.238.204.246/32","85.146.137.72/32"]
         destination_address_prefix = "*"
       }
     ]
